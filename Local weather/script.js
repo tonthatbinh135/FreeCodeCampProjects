@@ -77,8 +77,8 @@ function getWeather(lat,lon){
             $('#country').text(country);
             $('#desc').text(desc);
             $('#temp').text(currentTempInCelsius);
-            $('#humidity').text(humidity+"%");
-            $('#wind').text(windSpeed+"m/s")
+            $('#humidity').text(" "+ humidity+"%");
+            $('#wind').text( " "+ windSpeed+"m/s");
             iconCleaner();
             iconGenerator(weather);
         }
@@ -179,5 +179,5 @@ function addIconNight(weather){
 function iconCleaner(){
     $("#iconDay").children().css("display","none");
     $("#iconNight").children().css("display","none");
-
+    
 }
