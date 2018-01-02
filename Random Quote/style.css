@@ -1,0 +1,75 @@
+.clear-fix{
+    clear: both;
+}
+body {
+  background-image: url("https://i.imgur.com/m6lmIis.jpg");
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  width: 450px;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 1em;
+  color: #fff;
+}
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.quote-box {
+    margin-top: 10%;
+    padding: 10px 60px 10px 60px;
+    opacity: 0.6;
+    background-color: #fff;
+}
+.quote-box .quote-text {
+  font-size: 18px;
+  opacity: 1;
+}
+.quote-box .quote-text i {
+    opacity: 1;
+}
+.quote-box .quote-author {
+  float: right;
+  font-weight: 600;
+  opacity: 1;
+}
+.quote-box .buttons {
+    opacity: 1;
+}
+.quote-box .buttons .button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  font-size: 1em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+.quote-box .buttons .button:hover {
+  opacity: 0.9;
+}
+.quote-box .buttons .button#tweet-quote, .quote-box .buttons .button#facebook-quote {
+  float: left;
+  padding: 0px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 5px;
+  height: 30px;
+  width: 40px;
+}
+.quote-box .buttons .button#new-quote {
+  float: right;
+}

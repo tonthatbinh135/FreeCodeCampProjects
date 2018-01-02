@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- google map api -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="https://use.fontawesome.com/6f2d0a2810.js"></script>
+    
+    <title>Local weather</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center title row">
+            Local weather app <i class="wi wi-day-sleet-storm"></i>
+        </div>
+        <div class="weather-box col-md-6 col-md-offset-3">
+            <div class="text-center">
+                <p class="location"><span id="city"></span><span id="country"></span></p>
+                <p class="temperature"><span id="temp"></span><span id="temp-unit"> °C</span></p>
+                <p class="weather-icon">
+                    <div id="iconDay">
+                        <span class="dayclear"><i class="wi wi-day-sunny"></i></span>
+                        <span class="dayclouds"><i class="wi wi-day-cloudy"></i></span>
+                        <span class="dayovercast"><i class="wi wi-day-sunny-overcast"></i></span>
+                        <span class="daythunderstorm"><i class="wi wi-day-thunderstorm"></i></span>
+                        <span class="dayshowers"><i class="wi wi-day-showers"></i></span>
+                        <span class="dayrain"><i class="wi wi-day-rain"></i></span>
+                        <span class="daysnow"><i class="wi wi-day-snow"></i></span>
+                        <span class="dayhaze"><i class="wi wi-day-haze"></i></span>
+                        <span class="daymist"><i class="wi wi-day-fog"></i></span>
+                    </div>
+                    <div id="iconNight">
+                        <span class="nightclear"><i class="wi wi-night-clear"></i></span>
+                        <span class="nightclouds"><i class="wi wi-night-alt-cloudy"></i></span>
+                        <span class="nightovercast"><i class="wi wi-night-cloudy"></i></span>
+                        <span class="nightthunderstorm"><i class="wi wi-night-alt-thunderstorm"></i></span>
+                        <span class="nightshowers"><i class="wi wi-night-alt-showers"></i></span>
+                        <span class="nightrain"><i class="wi wi-night-alt-rain"></i></span>
+                        <span class="nightsnow"><i class="wi wi-night-alt-snow"></i></span>
+                        <span class="nighthaze"><i class="wi wi-night-fog"></i></span>
+                        <span class="nightmist"><i class="wi wi-night-fog"></i></span>
+                    </div>
+                </p>
+                <br>
+                <p><span id="desc"></span></p>
+                <p class="col-md-12 col-sm-12">
+                    <div class="col-md-6 col-sm-6">
+                        <span id="humidity"><i class="wi wi-humidity"></i></span>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <span id="wind"><i class="wi wi-strong-wind"></i></span>
+                    </div>
+                </p>
+            </div>
+            <div class="input-group">
+                <input type="search" name="Search" id="searchbox" class="form-control" placeholder="Input 'city name, country' for better accuracy">
+                <span class="input-group-btn"><input type="submit" value="Search"id="Search" class="btn btn-success"></span>
+            </div>
+        </div>
+        
+    </div>
+   
+  
+    <div class="footer text-center"> by
+        <a href="https://codepen.io/thatbinh135">thatbinh135</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
